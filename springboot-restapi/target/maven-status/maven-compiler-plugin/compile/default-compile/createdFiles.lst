@@ -1,0 +1,7 @@
+restweb\springbootrestapi\SpringbootRestapiApplication.class
+restweb\springbootrestapi\controller\ManUtdConstroller.class
+restweb\springbootrestapi\service\ManUnitedServiceImpl.class
+restweb\springbootrestapi\dao\ManUnitedPlayerRepository.class
+restweb\springbootrestapi\model\ManUnitedPlayer.class
+restweb\springbootrestapi\controller\HomePageRestController.class
+restweb\springbootrestapi\service\ManUnitedService.class

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>ManUnited</title>
+    <link rel="stylesheet" href="/css/man-united.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h3>Add Manchester United Player</h3>
+    <hr>
+
+    <p class="h4 mb-4">Save Player</p>
+
+    <!--/*@thymesVar id="manUnitedPlayer" type="restweb.springbootrestapi.model.ManUnitedPlayer"*/-->
+    <form action="#" th:action="@{addManUtdPlayer}" th:object="${manutdplayer}" method="post">
+        <input type="hidden" th:field="${manutdplayer.id}">
+        <input type="text" th:field="${manutdplayer.firstName}" class="form-control mb-4 col-4" placeholder="First Name">
+        <input type="text" th:field="${manutdplayer.secondName}" class="form-control mb-4 col-4" placeholder="Second Name">
+        <input type="text" th:field="${manutdplayer.position}" class="form-control mb-4 col-4" placeholder="Position">
+        <button type="submit" class="btn btn-info col-2">Save</button>
+    </form>
+
+    <hr>
+    <a href="manutd">Manchester United Players</a>
+
+</div>
+
+</body>
+</html>
